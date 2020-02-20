@@ -1,6 +1,4 @@
-html{
-    width: 320px ;
-}
+
 
 /*----Header----*/
 header{
@@ -15,7 +13,7 @@ header{
 header .title-header{
     width: 106px;
     height: 17px;
-    font-family: "Bebas Neue";
+    font-family: "Bebas Neue", sans-serif;
     font-size: 14px;
     font-weight: normal;
     font-stretch: normal;
@@ -75,11 +73,11 @@ article{
     box-sizing: border-box;
    
 }
-.hola{
+.article-one .hola{
     
     display: flex;
     justify-content: center;
-    font-family: "Roboto";
+    font-family: "Roboto", sans-serif;
     font-size: 18px;
     font-weight: 300;
     font-stretch: normal;
@@ -90,17 +88,16 @@ article{
     margin-top: 60px;
     margin-bottom: 0;
 }
-.soy-Juan-desarrolla {
+.article-one .soy-Juan-desarrolla {
   
     text-align: center;
-    font-family: "Bebas Neue";
+    font-family: "Bebas Neue", sans-serif;
     font-size: 36px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
     letter-spacing: 3px;
-    text-align: center;
     color: #000000;
     width: 221px;
     height: 129px;
@@ -108,7 +105,7 @@ article{
     margin-right: 50px;
     margin-bottom: 50px;
   }
-  .rectangle{
+  .article-one .rectangle{
     border-radius: 3px;
     border: solid 2px #1c6698;
     width: 160px;
@@ -116,27 +113,125 @@ article{
     background-color: transparent;
     margin-bottom: 50px;
   }
-  .rectangle p{
-    font-family: "Roboto";
+  .article-one .rectangle p{
+    font-family: "Roboto", sans-serif;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
     letter-spacing: 1px;
     text-align: center;
     color: #1c6698;
-    margin:auto;
+    margin: auto;
   }
 
 
 /*----Article Two----*/
 .article-two{
-    
+    background-color: #000000;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+.article-two .title-aboutme{
+
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.67px;
+    text-align: center;
+    color: #a2a2a2;
+}
+.article-two .section-art2{
+    text-align: left;
+    justify-content: flex-start;
+    font-family: "Roboto" , sans-serif;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    text-align: center;
+    color: #a2a2a2;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+.article-two #paragraph{
+    text-align: center;
+    justify-content: center;
+    font-weight: 300;
+ 
+}
+.article-two #paragraph-two{
+    text-align: center;
+    justify-content: center;
+    font-weight: 500;
+
 }
 
+.article-two .video-responsive{
+    display:flex;
+    justify-content: center;
+    margin-left: 24px;
+    margin-right: 24px;
+    height: auto;
+    width: auto;
+    padding-bottom:5%;
+    overflow: hidden;
+
+}
 
 /*----Article Three----*/
 .article-three{
     background-color: #e7e7e7;
+    position: relative;
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    box-sizing: border-box;
 }
+.article-three .title-hability{
+
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.67px;
+    text-align: center;
+    color: #a2a2a2;
+}
+.article-three .section-art2{
+    text-align: left;
+    justify-content: flex-start;
+    font-family: "Roboto" , sans-serif;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    text-align: center;
+    color: #a2a2a2;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+.article-three #paragraph{
+    text-align: center;
+    justify-content: center;
+    font-weight: 300;
+ 
+}
+.article-three #paragraph-two{
+    text-align: center;
+    justify-content: center;
+    font-weight: 500;
+
+}
+
 
 /*----Footer----*/
