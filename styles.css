@@ -1,13 +1,27 @@
+html {
+    box-sizing: border-box;   
+}
 
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+body {
+    font-family: "Bebas Neue";
+    text-align: center;
+    color: #a2a2a2;
+}
 
 /*----Header----*/
 header{
-    background-color: #000000;
-    height: 64px;
     display:flex;
     align-items: center;
     justify-content: space-between;
-
+    background-color: #000000;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
 }
 
 header .title-header{
@@ -55,23 +69,22 @@ header .title-header{
 
 /*----Article----*/
 article{
-    background-color: #000000;
-    display:flex;
+    background-color: #e7e7e7;
 }
 
 
 /*----Article One----*/
 .article-one{
-    background-color: #e7e7e7;
+    height: 378px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-   
+    align-content: space-around;
 }
-.article-one .hola{
+
+.article-one #hola{
     
-   
     justify-content: center;
     font-family: "Roboto", sans-serif;
     font-size: 18px;
@@ -82,45 +95,47 @@ article{
     margin-bottom: 0;
 }
 .article-one .soy-Juan-desarrolla {
-  
-    text-align: center;
+    width: 221px;
+    height: 129px;
+    /*text-align: center;
     justify-content: center;
+    font-weight: normal;*/
     font-family: "Bebas Neue", sans-serif;
     font-size: 36px;
-    font-weight: normal;
+    
     letter-spacing: 3px;
     color: #000000;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-bottom: 50px;
   }
   .article-one .rectangle{
     border-radius: 3px;
     border: solid 2px #1c6698;
     background-color: transparent;
-    margin-bottom: 50px;
+    width: 160px;
+    height: 40px;  
   }
+
   .article-one .rectangle p{
     font-family: "Roboto", sans-serif;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
+    font-size: 12px;
     letter-spacing: 1px;
-    text-align: center;
+    font-weight: 500;
+    padding-top: 10px;
+   /* text-align: center;*/
     color: #1c6698;
-    margin: auto;
   }
 
 
 /*----Article Two----*/
 .article-two{
-    background-color: #000000;
-    position: relative;
+    height: 578px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    box-sizing: border-box;
+    align-content: space-between;
+    background-color: #000000;
 }
 .article-two .title-aboutme{
 
@@ -135,18 +150,13 @@ article{
     color: #a2a2a2;
 }
 .article-two .section-art2{
-    text-align: left;
-    justify-content: flex-start;
-    font-family: "Roboto" , sans-serif;
+    margin-bottom: 40px;
+    width: 264px;
+    height: 200px;
+    font-family: "Roboto", sans-serif;
     font-size: 14px;
-    font-stretch: normal;
-    font-style: normal;
+    font-weight: 300;
     line-height: 1.43;
-    letter-spacing: normal;
-    text-align: center;
-    color: #a2a2a2;
-    margin-left: 25%;
-    margin-right: 25%;
 }
 .article-two #paragraph{
     text-align: center;
@@ -163,22 +173,62 @@ article{
 
 .article-two .video-responsive{
 
-    display:flex;
+   /* display:flex;
     justify-content: center;
     padding-bottom:5%;
-    overflow: hidden;
+    overflow: hidden;*/
 
 }
 
 /*----Article Three----*/
 .article-three{
-    background-color: #e7e7e7;
-    position: relative;
     display: flex;
-    justify-content: center;    
-    align-items: center;
-    box-sizing: border-box;
+    flex-direction: column;
+    align-content: space-around;
+    height: 546px;
 }
+
+.boxs {
+    display: grid;
+    gap: 32px;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 24px;
+    margin-right: 24px;
+    overflow: hidden;
+}
+
+.box{
+    display: flex;
+    align-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 208px;
+    height: 350px;
+    border-radius: 3px;
+    box-shadow: #000000;
+    background-color: #000000;
+    overflow: auto; 
+}
+.title-box {
+    width: 137px;
+    height: 26px;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    border-radius: 3px;
+    border: solid 2px #a2a2a2;
+    color: #a2a2a2;
+    font-family: 'Bebas Neue', sans-serif;
+    padding-top: 2px;
+}
+.secondtitle{
+    width: 137px;
+    height: 26px;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    color: #ffffff;
+}
+
+
 .article-three .title-hability{
 
     font-family: "Bebas Neue", sans-serif;
@@ -225,13 +275,15 @@ article{
 
 /*----Footer----*/
 footer{
-    background-color: #000000;
-    position: relative;
     display: flex;
     justify-content: center;    
     align-items: center;
     height: 104px;
+    font-size: 14px;
+    letter-spacing: 1.17px;
+    background-color: #000000;
 }
+/*
 footer p{
     color: #a2a2a2;
     width: 149px;
@@ -244,4 +296,4 @@ footer p{
     line-height: normal;
     letter-spacing: 1.17px;
     text-align: center;
-}
+}*/
