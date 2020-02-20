@@ -11,8 +11,6 @@ header{
 }
 
 header .title-header{
-    width: 106px;
-    height: 17px;
     font-family: "Bebas Neue", sans-serif;
     font-size: 14px;
     font-weight: normal;
@@ -53,8 +51,7 @@ header .title-header{
 
 
 /*----Main----*/
-main{
-}
+
 
 /*----Article----*/
 article{
@@ -70,19 +67,15 @@ article{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    box-sizing: border-box;
    
 }
 .article-one .hola{
     
-    display: flex;
+   
     justify-content: center;
     font-family: "Roboto", sans-serif;
     font-size: 18px;
     font-weight: 300;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
     letter-spacing: 1px;
     color: #000000;
     margin-top: 60px;
@@ -91,16 +84,12 @@ article{
 .article-one .soy-Juan-desarrolla {
   
     text-align: center;
+    justify-content: center;
     font-family: "Bebas Neue", sans-serif;
     font-size: 36px;
     font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
     letter-spacing: 3px;
     color: #000000;
-    width: 221px;
-    height: 129px;
     margin-left: 50px;
     margin-right: 50px;
     margin-bottom: 50px;
@@ -108,8 +97,6 @@ article{
   .article-one .rectangle{
     border-radius: 3px;
     border: solid 2px #1c6698;
-    width: 160px;
-    height: 40px;
     background-color: transparent;
     margin-bottom: 50px;
   }
@@ -130,6 +117,7 @@ article{
     background-color: #000000;
     position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
@@ -174,12 +162,9 @@ article{
 }
 
 .article-two .video-responsive{
+
     display:flex;
     justify-content: center;
-    margin-left: 24px;
-    margin-right: 24px;
-    height: auto;
-    width: auto;
     padding-bottom:5%;
     overflow: hidden;
 
@@ -204,33 +189,59 @@ article{
     line-height: normal;
     letter-spacing: 1.67px;
     text-align: center;
-    color: #a2a2a2;
+    color: #000000;
 }
-.article-three .section-art2{
-    text-align: left;
-    justify-content: flex-start;
-    font-family: "Roboto" , sans-serif;
+.article-three .section-art3{
+    display:grid;
+    grid-auto-flow: column;
+}
+.article-three .section2-one{
+    background-color: #000000;
+    margin:10px;
+}
+.article-three .section2-two{
+    background-color: #000000;
+    margin:10px;
+}
+.article-three .section2-three{
+    background-color: #000000;
+    margin:10px;
+}
+.article-three .section-art3 p{
+    width: 62px;
+    height: 80px;
+    font-family: "Roboto";
     font-size: 14px;
+    font-weight: normal;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.43;
+    line-height: normal;
     letter-spacing: normal;
     text-align: center;
     color: #a2a2a2;
-    margin-left: 25%;
-    margin-right: 25%;
-}
-.article-three #paragraph{
-    text-align: center;
-    justify-content: center;
-    font-weight: 300;
- 
-}
-.article-three #paragraph-two{
-    text-align: center;
-    justify-content: center;
-    font-weight: 500;
+   
 }
 
 
 /*----Footer----*/
+footer{
+    background-color: #000000;
+    position: relative;
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    height: 104px;
+}
+footer p{
+    color: #a2a2a2;
+    width: 149px;
+    height: 17px;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.17px;
+    text-align: center;
+}
